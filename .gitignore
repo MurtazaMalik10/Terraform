@@ -1,0 +1,35 @@
+# Terraform state files - these contain plaintext secrets, never commit
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Terraform working directories and lock/cache files
+.terraform/
+.terraform.lock.hcl
+
+# Variable files that may contain real values/secrets
+*.tfvars
+*.tfvars.json
+
+# Crash logs
+crash.log
+crash.*.log
+
+# CLI configuration files (may contain credentials)
+.terraformrc
+terraform.rc
+
+# Override files (used for local-only overrides)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Plan output files (can contain sensitive data)
+*.tfplan
+*plan.out
+
+# OS / editor junk
+.DS_Store
+.vscode/
+*.swp
